@@ -1,16 +1,16 @@
-package hjw.ev.myapplication
+package hjw.ev.myapplication;
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
-import android.view.View
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-import com.google.zxing.MultiFormatReader
+import com.google.zxing.MultiFormatReader;
 
-class MainActivity : AppCompatActivity() {
+public class MainActivity extends AppCompatActivity {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val multiFormatReader = MultiFormatReader()
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        MultiFormatReader multiFormatReader = new MultiFormatReader();
     }
 }
